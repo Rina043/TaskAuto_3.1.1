@@ -1,12 +1,12 @@
 version: '3.7'
 services:
   mysql:
-    image: postgres:12.0-alpine
+    image: library/postgres:12-alpine-alpine.0-alpine
     ports:
       - '5432:5432'
     volumes:
       - ./data:/var/lib/mysql
     environment:
       - POSTGRES_DB=db
-        - POSTGRES_USER=username
+        - POSTGRES_USER=postgresuser
         - POSTGRES_PASSWORD=pass123
