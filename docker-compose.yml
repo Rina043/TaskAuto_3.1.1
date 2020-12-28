@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   mysql:
-    image: library/postgres:12-alpine-alpine.0-alpine
+    image: postgres:12.0-alpine
     ports:
       - '5432:5432'
     volumes:
